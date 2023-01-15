@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1 class="text-center"><b>ประวัติการศึกษา</b></h1>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-header alert alert-warning">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                <h5>ประกาศนียบัตรวิชาชีพ (ปวช.)</h5>
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body text-dark">
+                จบการศึกษาในระดับ ประกาศนียบัตรวิชาชีพ (ปวช.) ที่วิทยาลัยเทคนิคร้อยเอ็ด สาขาวิชาคอมพิวเตอร์ธุรกิจ
+            </div>
+            <div class="row text">
+                <div class="col-lg-5 mx-auto">
+                    <img src="{% static 'images/ae1.png' %}" width="1500px" height="900" class="img-thumbnail mx-auto">
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+        <div class="card">
+            <div class="card-header alert alert-warning">
+                <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                    <h5>ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.)</h5>
+                </a>
+            </div>
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body text-dark">
+                    จบการศึกษาในระดับ ประกาศนียบัตรวิชาชีพชั้นสูง (ปวส.) ที่วิทยาลัยเทคนิคร้อยเอ็ด
+                    สาขาวิชาเทคโนโลยีธุรกิจดิจิทัล
+                </div>
+                <div class="row text">
+                    <div class="col-lg-5 mx-auto">
+                        <img src="{% static 'images/ae2.png' %}" width="1500px" height="900" class=" img-thumbnail">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br>
+{% endblock %}

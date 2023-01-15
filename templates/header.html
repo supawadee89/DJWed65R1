@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1 class="text-center"><b>สินค้าที่นำเสนอขาย</b></h1>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-header alert alert-warning">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                <h5>ปังกรอบ เนยหนึบ</h5>
+            </a>
+        </div>
+        <div class="row text">
+            <div class="col-lg-5 mx-auto">
+                <img src="{% static 'images/bread.jpg' %}" width="800px" height="500" class="img-thumbnail mx-auto">
+                <br>
+                <br>
+                <button class="btn btn-danger">กดสั่งซื้อ</button>
+                <br>
+                <br>
+            </div>
+            <br>
+            <div class="col-lg-5 mx-auto">
+                <img src="{% static 'images/bread1.jpg' %}" width="800px" height="500" class="img-thumbnail mx-auto">
+                 <br>
+                <br>
+                <button class="btn btn-danger">กดสั่งซื้อ</button>
+                <br>
+                <br>
+            </div>
+            <br>
+        </div>
+    </div>
+    <br>
+    </div>
+    <br>
+{% endblock %}
+
+

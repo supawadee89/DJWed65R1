@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div>
+        <link type="text/css" rel="stylesheet" href="{% static 'stylesheets/bt523/css/bootstrap.css' %}">
+        <script src="{% static 'stylesheets/bt523/js/bootstrap.js' %}"></script>
+        </head>
+        <body bgcolor="#87cefa" text="blue"></body>
+        <div class="mt-4 p-5 bg-primary text-white rounded">
+            <h1 class="text-center"><b>สิ่งที่สนใจ</b></h1>
+        </div>
+        <br>
+        <div class="card-header alert alert-warning">
+            <a class="btn" data-bs-popper="collaps" href="#collapseone">
+                <h5>เพลง</h5>
+            </a>
+        </div>
+        <div class="card-body text-dark">
+            เหตุผลที่สนใจเพลง : ช่วยให้เกิดการผ่อนคลาย
+            การฟังเพลงเป็นการใช้เวลาว่างเป็นกิจกรรมที่มีความสร้างสรรค์ทำให้เป็นการผ่อนคลายในช่วงเวลานั้น
+            หากกำลังเครียดการฟังเพลงจะเป็นกิจกรรมที่เป็นประโยชน์และเหมาะกับการพักผ่อนสมองมากๆ
+        </div>
+
+        <p class="text-center">
+            <br>
+        <div class="text-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tm2N4gntigI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+        </div>
+        <br>
+    </div>
+{% endblock %}

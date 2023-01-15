@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1 class="text-center"><b>บุคคลต้นแบบ</b></h1>
+    </div>
+    <br>
+
+    <div class="card">
+        <div class="card-header alert alert-warning">
+            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                <h5>บุคคลต้อนแบบ</h5>
+            </a>
+        </div>
+        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+            <div class="card-body text-dark">
+             อูน ชนิสรา วงศ์ดีประสิทธิ์ คือเจ้าของ Diamond Grains แบรนด์กราโนล่าคลีนเจ้าแรกในประเทศไทย ที่เปลี่ยนอาหารเพื่อสุขภาพแสนน่าเบื่อให้กลายเป็นอาหารแสนอร่อย
+             และเป็นนักธุรกิจ “อายุน้อยร้อยล้าน” ที่โด่งดังมากๆ อีกคนหนึ่งของเมืองไทย ถึงแม้จะเป็นนักธุรกิจที่ประสบความสำเร็จ ทว่าชนิสราก็ระบุว่า การเป็นนักธุรกิจไม่ใช่การใช้ชีวิตหรูหรา
+             แต่มันคืองานที่ต้องแก้ปัญหาอยู่เสมอ ซึ่งเธอบอกว่า “อูนตื่นขึ้นมาแก้ปัญหาทุกวัน แล้วอูนก็พยายามทำให้มันดีขึ้น”
+
+            </div>
+            <div class="row text">
+                <div class="col-lg-5 mx-auto">
+                    <img src="{% static 'images/oon.jpg' %}" width="1500px" height="900" class="img-thumbnail mx-auto">
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+    <br>
+{% endblock %}
