@@ -9,4 +9,9 @@ urlpatterns = [
     path('thirdpage/', views.thirdpage, name='thirdpage'),
     path('header/', views.header, name='header'),
     path('rolemodel/', views.rolemodel, name='rolemodel'),
+    path('showMyData/', views.showMyData, name='showMyData'),
+    path('showProduct/', views.showProduct, name='showProduct'),
+    path('newProduct/', views.newProduct, name='newProduct'),
+    path('frmProduct/', views.frmProduct, name='frmProduct'),
+
     ]

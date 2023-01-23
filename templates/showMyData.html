@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load fontawesome_6 %}
+{% fontawesome_6_static %}
+{% load static %}
+<!DOCTYPE html>
+{% block content %}
+    <br>
+    <h6 class="text-dark">รหัสนักศึกษา : {{ showID }}</h6>
+    <h6 class="text-dark">ชื่อนักศึกษา : {{ showName }}</h6>
+    <h6 class="text-dark">ที่อยู่นักศึกษา : {{ showAddress }}</h6>
+    <h6 class="text-dark">รหัสนักศึกษา : {{ showTel }}</h6>
+    <h6 class="text-dark">เพศ : {{ showGender }}</h6>
+    <h6 class="text-dark">วันเกิด : {{ showBirthday }}</h6>
+    <h6 class="text-dark">น้ำหนัก : {{ showWeight }}</h6>
+    <h6 class="text-dark">ส่วนสูง : {{ showHeight }}</h6>
+    <h6 class="text-dark">สถานะ : {{ showStatus }}</h6>
+    <h6 class="text-dark">มหาวิทยาลัย : {{ showSchool }}</h6>
+    <br>
+    <div class="row">
+    <div class="col-lg-2">
+    </div>
+     <div class="col-lg-8">
+         <table width="100%" class="table table-striped">
+        <tr class="text-center table-primary">
+            <td><b>ชื่อสินค้า</b></td>
+            <td><b>ราคา</b></td>
+            <td><b>รูปภาพ</b></td>
+        </tr>
+
+        {% for product in products %}
+            <tr>
+                <td>{{ product.0 }}</td>
+                <td>{{ product.1 }}</td>
+                <td><img class="img img-thumbnail" style="width: 100px; height: 100px" src="{{ product.2 }}"></td>
+            </tr>
+        {% endfor %}
+    </table>
+    </div>
+     <div class="col-lg-2">
+    </div>
+    </div>
+
+
+    <br>
+
+    </table>
+
+{% endblock %}
